@@ -60,6 +60,15 @@ dig +short www.scuacmg.com CNAME
 
 If either command returns empty output, GitHub will show `InvalidDNSError`.
 
+
+## Do I need to keep my computer on?
+
+No. You do **not** need to keep your computer running.
+
+- DNS records live at your **domain registrar/DNS provider** (for example Namecheap, Cloudflare, GoDaddy).
+- Website hosting is handled by **GitHub Pages** on GitHub's servers.
+- After records are saved and propagated, your site stays online 24/7 even when your laptop is off.
+
 ## Notes
 
 - `CNAME` in repo root is set to `scuacmg.com`.
