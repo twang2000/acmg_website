@@ -49,21 +49,6 @@ To avoid `InvalidDNSError` and "both domain and alternate name are improperly co
 3. Confirm both `scuacmg.com` and `www.scuacmg.com` resolve correctly.
 4. Enable **Enforce HTTPS** after checks pass.
 
-## How to check whether GitHub Actions Pages deployment is running
-
-After switching Pages source to **GitHub Actions**, use this checklist:
-
-1. Open your repo and click the **Actions** tab.
-2. Look for a workflow named **Deploy static site to GitHub Pages**.
-3. Status meanings:
-   - 🟡 **In progress**: workflow is currently running.
-   - ✅ **Success**: deployment finished and Pages should update shortly.
-   - ❌ **Failed**: click the run, open the failed step, and read logs.
-4. Click the most recent run and verify the final step **Deploy to GitHub Pages** succeeded.
-5. Optional: open **Settings → Pages** and confirm it shows the latest deployment URL/time.
-
-If no run appears, push a new commit to `work` or `main`, or run the workflow manually from **Actions → Deploy static site to GitHub Pages → Run workflow**.
-
 ## Quick verification commands
 
 Run these locally and verify they return values:
